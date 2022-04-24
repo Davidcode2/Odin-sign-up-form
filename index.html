@@ -16,21 +16,39 @@
 	<header></header>
 	<main>
 		<div class="img-section">
+			<img src="odin-lined.png" alt="odin logo in white">
+			<div>
+				<div class="background-color1">
+				</div>
+				<h1 class="heading" id="myHeading">The Odin Project</h1>
+			</div>
 		</div>
 		<div class="content-section">
 			<p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
 				cillum sint consectetur cupidatat.
+				Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
+				enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
+				exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
+				nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
+				minim nulla est proident. Nostrud officia pariatur ut officia. Sit
+				irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+				dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident
+				adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+				eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit
+				enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+				culpa et culpa duis.
 			</p>
 			<p class="call-to-action">You <span>know</span> you want to.</p>
 			<div class="card">
 				<form action="">
+					<p>Let's do this!</p>
 					<div class="input">
 						<label for="first-name">first name</label>
-						<input type="text" id="first-name" required>
+						<input type="text" id="first-name" minlength="2" title="please enter your first name" required>
 					</div>
 					<div>
 						<label for="last-name">last name</label>
-						<input type="text" id="last-name" required>
+						<input type="text" id="last-name" minlength="2" required>
 					</div>
 					<div>
 						<label for="e-mail">email</label>
@@ -38,18 +56,21 @@
 					</div>
 					<div>
 						<label for="phone-number">phone number</label>
-						<input type="tel" id="phone-number" required>
+						<input type="tel" id="phone-number" minlength="3" required>
 					</div>
 					<div>
 						<label for="password">password</label>
-						<input id="password" type="password" required>
+						<input id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
+							title="please enter a password with between 8 and 16 characters long" required>
+						<div class="requirements">*Passwords do not match</div>
 					</div>
 					<div>
 						<label for="confirm-password">confirm password</label>
-						<input id="confirm-password" type="password" required>
+						<input id="confirm-password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
+							title="please enter a password with 8 to 16 characters length." required>
 					</div>
-					<p>Already have an account? <span>Log in</span></p>
 					<button>Create Account</button>
+					<p>Already have an account? <span>Log in</span></p>
 				</form>
 			</div>
 		</div>
